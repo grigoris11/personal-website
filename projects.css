@@ -1,0 +1,295 @@
+/* Global Styles for Project Pages */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #121212;
+    color: #e0e0e0;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+header {
+    padding: 40px 0;
+}
+
+h1 {
+    font-size: 2.2em;
+    font-weight: 700;
+}
+
+/* Project Page Styling */
+.project-details {
+    max-width: 800px;
+    margin: 50px auto;
+    text-align: center;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+}
+
+.project-details img {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+    border-radius: 50px;
+    margin-bottom: 20px;
+}
+
+.project-info {
+    color: #e0e0e0;
+}
+
+.project-info h2 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+
+.project-info p {
+    font-size: 1.2em;
+    line-height: 1.5;
+}
+
+.project-info ul {
+    text-align: left;
+    list-style-type: none;
+    padding: 0;
+}
+
+.project-info li {
+    font-size: 1.1em;
+    margin: 10px 0;
+}
+
+/* Back Button */
+.back-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    color: #121212;
+    background: #e0e0e0;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.back-button:hover {
+    background: #ffffff;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .project-details {
+        max-width: 90%;
+        padding: 15px;
+    }
+}
+
+/* Carousel Container */
+.carousel {
+    position: relative;
+    max-width: 600px; /* Fixed width */
+    height: 350px;    /* Fixed height */
+    margin: auto;
+    overflow: hidden;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+/* Carousel Images */
+.carousel-container {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: 100%;
+    height: 100%;
+}
+
+.carousel-slide {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures consistent dimensions */
+    display: none;
+    border-radius: 10px;
+}
+
+.carousel-slide:first-child {
+    display: block;
+}
+
+/* Navigation Buttons */
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(211, 211, 211, 0.6); /* Light grey */
+    color: #121212;
+    border: none;
+    font-size: 24px;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+    border-radius: 50%;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+.prev:hover, .next:hover {
+    background: rgba(255, 255, 255, 0.5);
+    transform: translateY(-50%) scale(1.1);
+}
+
+/* Dots for Navigation */
+.carousel-dots {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.dot {
+    height: 12px;
+    width: 12px;
+    margin: 5px;
+    background: rgba(255, 255, 255, 0.5);
+    display: inline-block;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.dot.active {
+    background: white;
+}
+
+/* GitHub Button Styling */
+.github-button {
+    display: inline-block;
+    background: #333; /* Dark GitHub theme */
+    color: white;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.github-button:hover {
+    background: #555;
+    transform: scale(1.05);
+}
+
+/* Progress Bar Container */
+.progress-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px; /* Space between circles */
+    margin: 50px 0 80px 0; /* Top margin 50px, bottom margin 80px */
+}
+
+/* Each Progress Circle */
+.progress {
+    position: relative;
+    width: 120px;
+    height: 120px;
+}
+
+/* SVG Styling for Progress Circles */
+svg {
+    width: 100%;
+    height: 100%;
+    transform: rotate(-90deg); /* Start progress from the top */
+}
+
+/* Background Circle */
+svg circle {
+    fill: none;
+    stroke: rgba(255, 255, 255, 0.2);
+    stroke-width: 8;
+}
+
+/* Progress Circle */
+.progress-circle {
+    fill: none;
+    stroke: #00bcd4; /* Progress color */
+    stroke-width: 8;
+    stroke-dasharray: 283; /* Circumference of circle */
+    stroke-dashoffset: 283; /* Start at 0% progress */
+    transition: stroke-dashoffset 1s ease-in-out;
+}
+
+/* Title Below Each Progress Circle */
+.progress-title {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 1.2em;
+    color: #e0e0e0;
+}
+
+/* Dark/Light Mode Toggle Button */
+#mode-toggle {
+    background-color: #333; /* Dark background */
+    color: #e0e0e0;        /* Light text */
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+#mode-toggle:hover {
+    background-color: #555; /* Lighter on hover */
+    transform: scale(1.05);
+}
+/* Light Mode Overrides */
+body.light-mode {
+    background-color: #ffffff;
+    color: #121212;
+}
+/* Light Mode Overrides */
+body.light-mode {
+    background-color: #ffffff;
+    color: #121212;
+}
+
+/* Ensure all text elements use dark text in light mode */
+body.light-mode h1,
+body.light-mode h2,
+body.light-mode h3,
+body.light-mode p,
+body.light-mode li {
+    color: #121212;
+}
+
+/* Update link colors in light mode */
+body.light-mode a {
+    color: #121212;
+}
+
+/* If you have buttons with text, ensure they are legible too */
+body.light-mode button {
+    color: #121212;
+}
+.lang-toggle {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    border: none;
+    border-radius: 50%;
+    background: none;
+    cursor: pointer;
+    z-index: 1000;
+  }
+  
+  .lang-toggle img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+  }
+  

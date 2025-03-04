@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title data-translate-key="pageTitleProject3">Project 3 - My Portfolio</title>
+  <link rel="stylesheet" href="projects.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <!-- Language Toggle Button -->
+    <button id="lang-toggle" class="lang-toggle">
+      <img src="img/gr-flag.png" alt="Switch language">
+    </button>
+    <h1 data-translate-key="project3Title">Project 3</h1>
+    <!-- Dark/Light Mode Toggle Button -->
+    <button id="mode-toggle" data-translate-key="modeToggle">Switch to Light Mode</button>
+  </header>
+
+  <section class="project-details">
+    <img src="img/project3.jpg" alt="Project 3 Screenshot">
+    <div class="project-info">
+      <h2 data-translate-key="aboutProjectProject3">About This Project</h2>
+      <p data-translate-key="projectDescriptionProject3">
+        The Memory Card Matching Game is a Java-based application developed using JavaFX.
+        It is a classic memory puzzle game where players flip over pairs of cards to find matches.
+        The game provides a graphical user interface (GUI) that allows users to interact with the game board,
+        select difficulty levels, and track their performance.
+        Players must match all card pairs before running out of attempts to win the game.
+      </p>
+
+      <h3 data-translate-key="featuresTitleProject3">Key Features:</h3>
+      <ul>
+        <li data-translate-key="feature1_project3">
+          ✔ Feature 1: Interactive Game Board. A dynamic grid-based layout where players flip cards to find matching pairs.
+        </li>
+        <li data-translate-key="feature2_project3">
+          ✔ Feature 2: Multiple Difficulty Levels. Players can choose between 4x4, 8x8, or 10x10 grid sizes for different challenges.
+        </li>
+        <li data-translate-key="feature3_project3">
+          ✔ Feature 3: Score & Attempt Tracking. The game keeps track of the player's attempts and displays results upon completion.
+        </li>
+        <li data-translate-key="feature4_project3">
+          ✔ Feature 4: User-Friendly Menu. A main menu that allows users to enter their name, select card themes (numbers, animals, or objects), and start a new session.
+        </li>
+        <li data-translate-key="feature5_project3">
+          ✔ Feature 5: JavaFX-Based GUI. Smooth animations and visually appealing card-flipping effects enhance user experience.
+        </li>
+      </ul>
+
+      <div class="progress-container">
+        <!-- First Circle -->
+        <div class="progress">
+          <svg>
+            <circle cx="50" cy="50" r="45"></circle>
+            <circle class="progress-circle" cx="50" cy="50" r="45" data-percent="50"></circle>
+          </svg>
+          <p class="progress-title">Java</p>
+        </div>
+      
+        <!-- Second Circle -->
+        <div class="progress">
+          <svg>
+            <circle cx="50" cy="50" r="45"></circle>
+            <circle class="progress-circle" cx="50" cy="50" r="45" data-percent="40"></circle>
+          </svg>
+          <p class="progress-title">JavaFX</p>
+        </div>
+      
+        <!-- Third Circle -->
+        <div class="progress">
+          <svg>
+            <circle cx="50" cy="50" r="45"></circle>
+            <circle class="progress-circle" cx="50" cy="50" r="45" data-percent="10"></circle>
+          </svg>
+          <p class="progress-title">Visual Paradigm</p>
+        </div>
+      </div>
+      
+      <!-- Carousel -->
+      <div class="carousel">
+        <button class="prev" onclick="prevSlide()">❮</button>
+        <div class="carousel-container">
+          <img class="carousel-slide" src="img/project3-1.jpg" alt="Project Image 1">
+          <img class="carousel-slide" src="img/project3-2.jpg" alt="Project Image 2">
+          <img class="carousel-slide" src="img/project3-3.jpg" alt="Project Image 3">
+          <img class="carousel-slide" src="img/project3-4.jpg" alt="Project Image 4">
+          <img class="carousel-slide" src="img/project3-5.jpg" alt="Project Image 5">
+        </div>
+        <button class="next" onclick="nextSlide()">❯</button>
+      </div>
+      
+      <!-- Dots for Navigation -->
+      <div class="carousel-dots">
+        <span class="dot" onclick="setSlide(0)"></span>
+        <span class="dot" onclick="setSlide(1)"></span>
+        <span class="dot" onclick="setSlide(2)"></span>
+        <span class="dot" onclick="setSlide(3)"></span>
+        <span class="dot" onclick="setSlide(4)"></span>
+      </div>
+      
+      <div>
+        <a href="https://github.com/grigoris11/Memory-Card-Matching-Game.git" target="_blank" class="github-button" data-translate-key="githubButton">
+          View on GitHub
+        </a>
+      </div>
+      
+      <!-- Back Button -->
+      <a href="index.html" class="back-button" data-translate-key="backButton">Back to Portfolio</a>
+    </div>
+  </section>
+  
+  <!-- JavaScript Files -->
+  <script defer src="carousel.js"></script>
+  <script defer src="mode-toggle.js"></script>
+  <script defer src="lang-toggle.js"></script>
+  <script defer src="progress.js"></script>
+</body>
+</html>
+

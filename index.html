@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title data-translate-key="pageTitle">My Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <header>
+    <h1 data-translate-key="headerTitle">Grigoris Koutlis</h1>
+    <p data-translate-key="headerSubtitle">Web Developer | Designer | Creator</p>
+    <!-- Language Toggle Button -->
+    <button id="lang-toggle" class="lang-toggle">
+      <img src="img/gr-flag.png" alt="Switch language">
+    </button>
+    <!-- Dark/Light Mode Toggle Button -->
+    <button id="mode-toggle">Switch to Light Mode</button>
+  </header>
+
+  <section class="intro">
+    <h2 data-translate-key="welcomeTitle">Welcome to My Portfolio</h2>
+    <p class="intro-text" data-translate-key="introText">
+      Here is a space where I showcase my work, projects, and skills. Feel free to explore and connect with me.
+    </p>
+
+    <div class="profile-section">
+      <img src="img/profile.jpg" alt="Grigoris Koutlis">
+      <div class="about-me">
+        <h3 data-translate-key="aboutMe">About Me</h3>
+        <p data-translate-key="aboutMeText">
+          Hi! I'm Grigoris, a passionate web developer who loves building clean and functional websites.
+          I enjoy learning new technologies and turning ideas into reality.
+          I am currently a student of the Department of Information and Communication Systems Engineering (ICSD) in Samos, Greece.
+        </p>
+      </div>
+    </div>
+
+    <div class="social-links">
+      <a href="https://www.linkedin.com/in/grigoris-koutlis-198a0b313/" target="_blank">LinkedIn</a>
+      <a href="https://github.com/grigoris11" target="_blank">GitHub</a>
+    </div>
+  </section>
+
+  <div class="progress-container">
+    <!-- First Circle -->
+    <div class="progress">
+      <svg>
+        <circle cx="50" cy="50" r="45"></circle>
+        <circle class="progress-circle" cx="50" cy="50" r="45" data-percent="90"></circle>
+      </svg>
+      <p class="progress-title">HTML &amp; CSS - 90%</p>
+    </div>
+
+    <!-- Second Circle -->
+    <div class="progress">
+      <svg>
+        <circle cx="50" cy="50" r="45"></circle>
+        <circle class="progress-circle" cx="50" cy="50" r="45" data-percent="60"></circle>
+      </svg>
+      <p class="progress-title">JavaScript - 60%</p>
+    </div>
+
+    <!-- Third Circle -->
+    <div class="progress">
+      <svg>
+        <circle cx="50" cy="50" r="45"></circle>
+        <circle class="progress-circle" cx="50" cy="50" r="45" data-percent="55"></circle>
+      </svg>
+      <p class="progress-title">PHP - 55%</p>
+    </div>
+  </div>
+
+  <!-- My Works Section -->
+  <section class="my-works">
+    <h2 data-translate-key="projectsTitle">My Projects</h2>
+    <div class="works-grid">
+      <div class="work-item">
+        <a href="project1.html">
+          <img src="img/project1.jpg" alt="Project 1">
+          <h3 data-translate-key="project1Title">Project 1</h3>
+        </a>
+      </div>
+      <div class="work-item">
+        <a href="project2.html">
+          <img src="img/project2.jpg" alt="Project 2">
+          <h3 data-translate-key="project2Title">Project 2</h3>
+        </a>
+      </div>
+      <div class="work-item">
+        <a href="project3.html">
+          <img src="img/project3.jpg" alt="Project 3">
+          <h3 data-translate-key="project3Title">Project 3</h3>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- JavaScript Files -->
+  <script defer src="progress.js"></script>
+  <script defer src="mode-toggle.js"></script>
+  <script defer src="lang-toggle.js"></script>
+
+</body>
+</html>

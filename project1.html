@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title data-translate-key="pageTitle">Project 1 - My Portfolio</title>
+  <link rel="stylesheet" href="projects.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <!-- Language Toggle Button -->
+    <button id="lang-toggle" class="lang-toggle">
+      <img src="img/gr-flag.png" alt="Switch language">
+    </button>
+    
+    <h1 data-translate-key="headerTitle">Medical Center</h1>
+    
+    <!-- Dark/Light Mode Toggle Button -->
+    <button id="mode-toggle" data-translate-key="modeToggle">Switch to Light Mode</button>
+  </header>
+
+  <section class="project-details">
+    <img src="img/project1.jpg" alt="Project 1 Screenshot">
+    <div class="project-info">
+      <h2 data-translate-key="aboutProject">About This Project</h2>
+      <p data-translate-key="projectDescription">
+        This project is for one of our lessons in full-stack web programming. It was built using HTML, CSS, JavaScript, and PHP.
+      </p>
+
+      <!-- Progress Bars -->
+      <div class="progress-container">
+        <!-- First Circle -->
+        <div class="progress">
+          <svg>
+            <circle cx="50" cy="50" r="45"></circle>
+            <circle class="progress-circle" cx="50" cy="50" r="45" data-percent="50"></circle>
+          </svg>
+          <p class="progress-title">HTML &amp; CSS 50%</p>
+        </div>
+
+        <!-- Second Circle -->
+        <div class="progress">
+          <svg>
+            <circle cx="50" cy="50" r="45"></circle>
+            <circle class="progress-circle" cx="50" cy="50" r="45" data-percent="25"></circle>
+          </svg>
+          <p class="progress-title">JavaScript 25%</p>
+        </div>
+
+        <!-- Third Circle -->
+        <div class="progress">
+          <svg>
+            <circle cx="50" cy="50" r="45"></circle>
+            <circle class="progress-circle" cx="50" cy="50" r="45" data-percent="25"></circle>
+          </svg>
+          <p class="progress-title">PHP<br>25%</p>
+        </div>
+      </div>
+
+      <h3 data-translate-key="featuresTitle">Key Features:</h3>
+      <ul>
+        <li data-translate-key="feature1">✔ Feature 1: Fully working clinic site</li>
+        <li data-translate-key="feature2">✔ Feature 2: Different permissions depending on the role (doctor, secretary, patient)</li>
+        <li data-translate-key="feature3">✔ Feature 3: With a few changes, it can be implemented for a real-life office</li>
+      </ul>
+
+      <!-- Carousel -->
+      <div class="carousel">
+        <button class="prev" onclick="prevSlide()">❮</button>
+        <div class="carousel-container">
+          <img class="carousel-slide" src="img/project1-1.jpg" alt="Project Image 1">
+          <img class="carousel-slide" src="img/project1-2.jpg" alt="Project Image 2">
+          <img class="carousel-slide" src="img/project1-3.jpg" alt="Project Image 3">
+          <img class="carousel-slide" src="img/project1-4.jpg" alt="Project Image 4">
+          <img class="carousel-slide" src="img/project1-5.jpg" alt="Project Image 5">
+        </div>
+        <button class="next" onclick="nextSlide()">❯</button>
+      </div>
+
+      <!-- Dots for Navigation -->
+      <div class="carousel-dots">
+        <span class="dot" onclick="setSlide(0)"></span>
+        <span class="dot" onclick="setSlide(1)"></span>
+        <span class="dot" onclick="setSlide(2)"></span>
+        <span class="dot" onclick="setSlide(3)"></span>
+        <span class="dot" onclick="setSlide(4)"></span>
+      </div>
+
+      <!-- GitHub Button -->
+      <div>
+        <a href="https://github.com/grigoris11/Health-Clinic.git" target="_blank" class="github-button" data-translate-key="githubButton">
+          View on GitHub
+        </a>
+      </div>
+
+      <!-- Back Button -->
+      <a href="index.html" class="back-button" data-translate-key="backButton">Back to Portfolio</a>
+    </div>
+  </section>
+
+  <!-- JavaScript Files -->
+  <script defer src="progress.js"></script>
+  <script defer src="carousel.js"></script>
+  <script defer src="mode-toggle.js"></script>
+  <script defer src="lang-toggle.js"></script>
+</body>
+</html>
+
+
