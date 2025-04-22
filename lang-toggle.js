@@ -57,6 +57,10 @@ document.addEventListener("DOMContentLoaded", function() {
       en: "Project 3",
       gr: "Έργο 3"
     },
+    project4Title:{
+      en: "Project 4",
+      gr: "'Eργο 4"
+    },
     modeToggle: {
       en: "Switch to Light Mode",
       gr: "Αλλαγή σε Light Mode"
@@ -135,13 +139,14 @@ document.addEventListener("DOMContentLoaded", function() {
       en: "✔ Feature 5: JavaFX-Based GUI. Smooth animations and visually appealing card-flipping effects enhance user experience.",
       gr: "✔ Χαρακτηριστικό 5: Γραφικό Περιβάλλον βασισμένο στη JavaFX. Ομαλές κινήσεις και ελκυστικά εφέ αναποδογύρωσης καρτών βελτιώνουν την εμπειρία χρήστη."
     },
+    //project 4
     pageTitleProject4: {
       en: "Project 4 - My Portfolio",
       gr: "Έργο 4 - Το Portfolio μου"
     },
     project4Title: {
-      en: "VR Museum ",
-      gr: "Μουσείο VR "
+      en: "Project 4 ",
+      gr: "'Εργο 4 "
     },
     aboutProjectProject4: {
       en: "About This Project",
