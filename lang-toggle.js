@@ -134,7 +134,48 @@ document.addEventListener("DOMContentLoaded", function() {
     feature5_project3: {
       en: "✔ Feature 5: JavaFX-Based GUI. Smooth animations and visually appealing card-flipping effects enhance user experience.",
       gr: "✔ Χαρακτηριστικό 5: Γραφικό Περιβάλλον βασισμένο στη JavaFX. Ομαλές κινήσεις και ελκυστικά εφέ αναποδογύρωσης καρτών βελτιώνουν την εμπειρία χρήστη."
+    },
+    pageTitleProject4: {
+      en: "Project 4 - My Portfolio",
+      gr: "Έργο 4 - Το Portfolio μου"
+    },
+    project4Title: {
+      en: "VR Museum ",
+      gr: "Μουσείο VR "
+    },
+    aboutProjectProject4: {
+      en: "About This Project",
+      gr: "Σχετικά με το Έργο"
+    },
+    projectDescriptionProject4: {
+      en: "This project was made for a local folklore Museum. The website includes an elegant welcome page with historical context, a VR TOUR using 360° scenes where users can explore different rooms interactively, a Media Wall for browsing through photos with zoomable modals and navigation, and a dedicated Δραστηριότητες page (for events/activities, ready for future content).",
+      gr: "Αυτό το έργο δημιουργήθηκε για ένα τοπικό λαογραφικό μουσείο. Ο ιστότοπος περιλαμβάνει μια κομψή σελίδα καλωσορίσματος με ιστορικό υπόβαθρο, μια περιήγηση VR με 360° σκηνές όπου οι χρήστες μπορούν να εξερευνήσουν διαφορετικά δωμάτια διαδραστικά, ένα Media Wall για προβολή φωτογραφιών με δυνατότητες μεγέθυνσης και πλοήγησης, και μια σελίδα δραστηριοτήτων για μελλοντικό περιεχόμενο."
+    },
+    featuresTitleProject4: {
+      en: "Key Features:",
+      gr: "Βασικά Χαρακτηριστικά:"
+    },
+    feature1_project4: {
+      en: "✔ Feature 1: Interactive VR tour using 360° panoramic scenes.",
+      gr: "✔ Χαρακτηριστικό 1: Διαδραστική περιήγηση VR με πανοραμικές σκηνές 360°."
+    },
+    feature2_project4: {
+      en: "✔ Feature 2: Elegant welcome page with historical context and visuals.",
+      gr: "✔ Χαρακτηριστικό 2: Κομψή σελίδα καλωσορίσματος με ιστορικό περιεχόμενο και εικόνες."
+    },
+    feature3_project4: {
+      en: "✔ Feature 3: Image gallery with modal and zoom navigation.",
+      gr: "✔ Χαρακτηριστικό 3: Συλλογή εικόνων με δυνατότητα μεγέθυνσης και περιήγησης."
+    },
+    feature4_project4: {
+      en: "✔ Feature 4: Events page structure for future content expansion.",
+      gr: "✔ Χαρακτηριστικό 4: Δομή σελίδας δραστηριοτήτων για μελλοντικό περιεχόμενο."
+    },
+    feature5_project4: {
+      en: "✔ Feature 5: Built with Pannellum, Lightbox, HTML/CSS/JS.",
+      gr: "✔ Χαρακτηριστικό 5: Υλοποίηση με Pannellum, Lightbox, HTML/CSS/JS."
     }
+    
   };
 
   function updateText() {
@@ -189,3 +230,4 @@ document.addEventListener("DOMContentLoaded", function() {
     }
   }
 });
+
