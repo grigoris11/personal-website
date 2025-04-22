@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title data-translate-key="pageTitleProject4">Project 4 - My Portfolio</title>
+  <link rel="stylesheet" href="projects.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <header>
+    <button id="lang-toggle" class="lang-toggle">
+      <img src="img/gr-flag.png" alt="Switch language" />
+    </button>
+    <h1 data-translate-key="project4Title">VR Museum </h1>
+    <button id="mode-toggle" data-translate-key="modeToggle">Switch to Light Mode</button>
+  </header>
+
+  <section class="project-details">
+    <img src="img/project4.jpg" alt="Project 4 Screenshot" />
+    <div class="project-info">
+      <h2 data-translate-key="aboutProjectProject4">About This Project</h2>
+      <p data-translate-key="projectDescriptionProject4">
+        This project was made for a local folklore Museum. The website includes an elegant welcome page with historical context,
+        a VR TOUR using 360° scenes where users can explore different rooms interactively,
+        a Media Wall for browsing through photos with zoomable modals and navigation,
+        and a dedicated Δραστηριότητες page (for events/activities, ready for future content).
+      </p>
+
+      <h3 data-translate-key="featuresTitleProject4">Key Features:</h3>
+      <ul>
+        <li data-translate-key="feature1_project4">✔ Feature 1: Interactive VR tour using 360° panoramic scenes.</li>
+        <li data-translate-key="feature2_project4">✔ Feature 2: Elegant welcome page with historical context and visuals.</li>
+        <li data-translate-key="feature3_project4">✔ Feature 3: Image gallery with modal and zoom navigation.</li>
+        <li data-translate-key="feature4_project4">✔ Feature 4: Events page structure for future content expansion.</li>
+        <li data-translate-key="feature5_project4">✔ Feature 5: Built with Pannellum, Lightbox, HTML/CSS/JS.</li>
+      </ul>
+
+      <!-- Carousel -->
+      <div class="carousel">
+        <button class="prev" onclick="prevSlide()">❮</button>
+        <div class="carousel-container">
+          <img class="carousel-slide" src="img/project4-1.jpg" alt="Project Image 1" />
+          <img class="carousel-slide" src="img/project4-2.jpg" alt="Project Image 2" />
+          <img class="carousel-slide" src="img/project4-3.jpg" alt="Project Image 3" />
+          <img class="carousel-slide" src="img/project4-4.jpg" alt="Project Image 4" />
+          <img class="carousel-slide" src="img/project4-5.jpg" alt="Project Image 5" />
+        </div>
+        <button class="next" onclick="nextSlide()">❯</button>
+      </div>
+
+      <!-- Dots -->
+      <div class="carousel-dots">
+        <span class="dot" onclick="setSlide(0)"></span>
+        <span class="dot" onclick="setSlide(1)"></span>
+        <span class="dot" onclick="setSlide(2)"></span>
+        <span class="dot" onclick="setSlide(3)"></span>
+        <span class="dot" onclick="setSlide(4)"></span>
+      </div>
+
+      <!-- GitHub Button -->
+      <div>
+        <a href="https://github.com/grigoris11/museumsite" target="_blank" class="github-button" data-translate-key="githubButton">
+          View on GitHub
+        </a>
+      </div>
+
+      <!-- Back Button -->
+      <a href="index.html" class="back-button" data-translate-key="backButton">Back to Portfolio</a>
+    </div>
+  </section>
+
+  <!-- Scripts -->
+  <script defer src="carousel.js"></script>
+  <script defer src="mode-toggle.js"></script>
+  <script defer src="lang-toggle.js"></script>
+</body>
+</html>
